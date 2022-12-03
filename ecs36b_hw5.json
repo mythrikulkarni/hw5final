@@ -1,0 +1,45 @@
+[
+    {
+        "name": "move",
+        "params": {
+            "action": "move object",
+            "location": {},
+	    "class_id": "class name",
+	    "object_id": "object id",
+	    "json_object": {}
+        },
+        "returns": {
+            "action": "response",
+	    "response": "jsonstr"
+        }
+    },
+    {
+        "name": "search",
+        "params": {
+            "action": "locate object",
+	    "class_id": "class name",
+	    "object_id": "class name"
+        },
+        "returns": {
+            "action": "response",
+	    "response": {}
+        }
+    },
+    {
+        "name": "dump2JSON",
+        "params": {
+            "action": "remote_call",
+            "host_url": "1234567890",
+	    "class_id": "transaction",
+	    "object_id": "0000000001",
+	    "arguments": "jsonstr"
+        },
+        "returns": {
+            "action": "call",
+            "host_url": "1234567890",
+	    "class_id": "transaction",
+	    "object_id": "0000000001",
+	    "response": "jsonstr"
+        }
+    }
+]
